@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.resume-btn {
+  background: #38bdf8;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: #0f172a;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  margin-left: 40px;  
+}
+
+.download-icon {
+  margin-right: 6px;
+}
+
+#downloadMessage {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.section {
+  padding: 70px 10%;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero h1 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.accent {
+  color: #38bdf8;
+  font-weight: 800;
+}
+
+.primary-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 18px;
+  background: #38bdf8;
+  color: #0f172a;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.primary-btn:hover {
+  background: #60a5fa;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 150px;
+  border-radius: 14px;
+  border: 3px solid #38bdf8;
+  object-fit: cover;
+}
+
+.social-icons {
+  margin-top: 12px;
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons a {
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: #38bdf8;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #60a5fa;
+  transform: scale(1.07);
+}
+
+.project-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: #475569;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+footer {
+  text-align: center;
+  background: #0a101e;
+  padding: 20px;
+  margin-top: 40px;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section {
+    padding: 50px 5%;
+  }
+
+  .profile-img {
+    width: 120px;
+  }
+}
